@@ -1,5 +1,3 @@
-/*global CSS*/
-
 html,
 body,
 .container {
@@ -15,6 +13,7 @@ body,
   font-family: arial, sans-serif;
   color: rgba(0, 0, 0, 0.87);
 }
+
 a:link {
   text-decoration: none;
   margin: 10px;
@@ -23,6 +22,7 @@ a:link:hover {
   text-decoration: underline;
 }
 
+/*search-bar styling*/
 .search-bar {
   margin-bottom: 10px;
   border: none;
@@ -78,6 +78,7 @@ svg {
   opacity: 0.3;
 }
 
+/*submit button styling*/
 input[type="submit"] {
   background-color: #f8f9fa;
   border: 1px solid #f8f9fa;
@@ -99,6 +100,18 @@ input[type="submit"]:hover {
   color: #202124;
 }
 
+.advanced-search {
+  color: #fff !important;
+  background-color: #357ae8;
+  background-image: -webkit-linear-gradient(top, #4d90fe, #357ae8);
+  background-image: -moz-linear-gradient(top, #4d90fe, #357ae8);
+  background-image: -ms-linear-gradient(top, #4d90fe, #357ae8);
+  background-image: -o-linear-gradient(top, #4d90fe, #357ae8);
+  background-image: linear-gradient(top, #4d90fe, #357ae8);
+  border: 1px solid #2f5bb7;
+}
+
+/*remove autofill color from text input*/
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -106,6 +119,7 @@ input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
+/*site structure using 3 flexbox*/
 .box1 {
   margin: 10px;
   margin-bottom: auto;
@@ -118,6 +132,13 @@ input:-webkit-autofill:active {
   text-align: center;
 }
 
+.box3 {
+  width: calc(100% - 80px);
+  position: absolute;
+  padding: 40px;
+  font-size: 13px;
+}
+
 h1,
 hr {
   color: #d93025;
@@ -126,12 +147,6 @@ hr {
   margin-bottom: 35px;
 }
 
-.box3 {
-  width: calc(100% - 80px);
-  position: absolute;
-  padding: 40px;
-  font-size: 13px;
-}
 /*Table*/
 
 tr {
@@ -140,15 +155,4 @@ tr {
 
 td:last-child {
   text-align: right;
-}
-
-.advanced-search {
-  color: #fff !important;
-  background-color: #357ae8;
-  background-image: -webkit-linear-gradient(top, #4d90fe, #357ae8);
-  background-image: -moz-linear-gradient(top, #4d90fe, #357ae8);
-  background-image: -ms-linear-gradient(top, #4d90fe, #357ae8);
-  background-image: -o-linear-gradient(top, #4d90fe, #357ae8);
-  background-image: linear-gradient(top, #4d90fe, #357ae8);
-  border: 1px solid #2f5bb7;
 }
